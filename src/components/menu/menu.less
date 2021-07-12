@@ -1,0 +1,36 @@
+.menu {
+    display: flex;
+
+    &-item {
+        border-right: 1px solid #f2f4f8;
+        padding-right: @size-space * 2;
+        margin-right: @size-space * 2;
+
+        &:last-child {
+            border: none;
+            padding-right: 0;
+            margin-right: 0;
+        }
+
+        a {
+            color: #525253;
+            display: inline-block;
+            position: relative;
+
+            &.active {
+                color: @primary-color;
+                font-weight: 500;
+
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    border-bottom: 2px solid @primary-color;
+                    position: absolute;
+                    right: 0;
+                    left: 0;
+                    bottom: -17px;
+                }
+            }
+        }
+    }
+}

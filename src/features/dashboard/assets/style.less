@@ -1,0 +1,328 @@
+@color-border-card: #ebeff0;
+@box-shadow-card: 0 2px 6px 0 rgba(82, 82, 83, 0.07);
+
+.dashboard {
+    background: #f2f4f8;
+
+    .content {
+        padding: @size-space;
+    }
+}
+
+.card-shadow {
+    box-shadow: @box-shadow-card;
+    border-color: @color-border-card;
+
+    .title-card {
+        font-size: 22px;
+        font-weight: 500;
+
+        color: @primary-color;
+    }
+
+    .title-card-underline {
+        color: @primary-color;
+
+        span {
+            font-size: 16px;
+            font-weight: 500;
+            display: inline-block;
+            border-bottom: 2px solid @primary-color;
+        }
+    }
+}
+
+.product-select {
+    &-title {
+        @height: 47px;
+
+        padding: 0 12px 0 24px;
+        height: @height;
+        border-bottom: 1px solid @border-color;
+
+        .title-card-underline {
+            span {
+                display: flex;
+                align-items: center;
+                height: @height;
+            }
+        }
+    }
+}
+
+.toggle-product-list {
+    background: #fff;
+    min-height: 30px;
+    box-shadow: 0 -3px 6px 0 rgba(116, 128, 138, 0.13);
+    filter: drop-shadow(0px 0px 2px #ddd);
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    &.show {
+        height: 300px;
+    }
+
+    .btn-toggle {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .arrow {
+            padding: 3px 15px 0;
+            background: #fff;
+            text-align: center;
+            border-radius: 25px 25px 0 0;
+            line-height: 1.2;
+
+            font-weight: 500;
+            color: @primary-color;
+
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+
+            .icon {
+                font-size: 19px;
+                line-height: 1;
+            }
+        }
+    }
+
+    .products-wrap {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .products-scroll {
+        flex: 1;
+    }
+
+    .products {
+        display: grid;
+        padding: 24px;
+
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: @size-space;
+    }
+}
+
+.product-card {
+    position: relative;
+    box-shadow: 0 2px 6px 0 rgba(116, 128, 138, 0.18);
+    border: 1px solid #ddd;
+    overflow: hidden;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: all ease-in-out 0.15s;
+
+    &:hover {
+        box-shadow: 0px 10px 10px 0 rgba(116, 128, 138, 0.18);
+        transform: translateY(-3px);
+    }
+
+    .product-image {
+        background: #eee;
+        padding-bottom: 90%;
+
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .product-name {
+        font-size: 12px;
+        padding: 5px;
+        line-height: 1;
+    }
+
+    .product-more {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+        button {
+            height: 20px;
+            width: 20px;
+
+            span {
+                font-size: 19px;
+            }
+        }
+    }
+
+    &.outOfStock {
+        box-shadow: none;
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
+
+.bill {
+    margin-top: 20px;
+}
+
+.bill-row {
+    padding-bottom: @size-space;
+    margin-bottom: @size-space;
+    border-bottom: 1px solid @border-color;
+
+    &.border-none {
+        border: none;
+    }
+
+    .label {
+        font-weight: 500;
+    }
+
+    &-title {
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: @size-space - 2;
+    }
+}
+
+.btn-cancel-order,
+.btn-remove-product {
+    color: @error-color;
+
+    &:hover {
+        color: rgba(@error-color, 0.7);
+    }
+}
+
+.btn-cancel-order {
+    line-height: 1;
+}
+
+.btn-select-product {
+    color: @primary-color;
+
+    &:hover {
+        color: rgba(@primary-color, 0.7);
+    }
+}
+
+.payment-item {
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.variants {
+    padding-bottom: @size-space;
+
+    .variant {
+        display: flex;
+        min-height: 46px;
+
+        align-items: center;
+        justify-content: space-between;
+
+        border-bottom: 1px solid @border-color;
+        padding: 0 @size-space + 8px;
+        cursor: pointer;
+        font-weight: 500;
+
+        &.disabled {
+            cursor: not-allowed;
+        }
+
+        &:hover {
+            background: @color-disable;
+        }
+    }
+}
+
+.search-customer {
+    position: relative;
+
+    .customers-list {
+        max-height: 350px;
+        overflow-y: auto;
+
+        .customer-row {
+            padding: calc(@size-space / 2) @size-space;
+            border-bottom: 1px solid @border-color;
+            cursor: pointer;
+
+            .avatar {
+                background-color: #fff;
+                color: @dark;
+                border: 1px solid @dark;
+            }
+
+            .customer-phoneNo {
+                color: @primary-color;
+            }
+
+            &:hover {
+                background: @primary-color;
+                color: #fff;
+
+                .customer-phoneNo {
+                    color: #fff;
+                }
+
+                .avatar {
+                    color: @primary-color;
+                    border-color: @primary-color;
+                }
+            }
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+
+    .add-customer {
+        border-top: 1px solid @border-color;
+        text-align: center;
+        padding: 7px;
+    }
+}
+
+.success-order {
+    text-align: center;
+
+    .ant-btn {
+        width: 155px;
+        height: 48px;
+
+        &:extend(.btn-shadow);
+        font-weight: 500;
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

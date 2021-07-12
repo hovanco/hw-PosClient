@@ -1,0 +1,35 @@
+.bill-to-print {
+    width: 100vw;
+    padding: 10px 5vw;
+    font-size: 12px;
+
+    .products-to-print {
+        .row {
+            display: flex;
+            justify-content: space-between;
+            .count {
+                width: 20vw;
+            }
+            .price {
+                width: 30vw;
+            }
+            .total-price {
+                flex: 1;
+                text-align: right;
+            }
+        }
+    }
+
+    .order-summary tr td:nth-child(2) {
+        text-align: right;
+    }
+
+    .logo {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        img {
+            height: 10vw;
+        }
+    }
+}

@@ -1,0 +1,151 @@
+.product-research {
+    .search-product-box {
+        .ant-card-body {
+            padding: 20px 24px 13px;
+            box-shadow: 0 2px 6px 0 rgba(82, 82, 83, 0.07);
+            border: solid 1px #ebeff0;
+            background-color: #f6f8f8;
+        }
+    }
+
+    h3.ant-typography {
+        color: @primary-color;
+        margin-bottom: 17px;
+    }
+
+    .product-list {
+        background: #fff;
+        height: calc(100vh - 236px);
+        display: flex;
+        flex-direction: column;
+        .product {
+            &-price,
+            &-quantity {
+                text-align: center;
+            }
+        }
+        .product-list-heading {
+            font-weight: 500;
+            padding: 15px;
+            background: #fff;
+            border-bottom: 1px solid @border-color;
+        }
+        .product-list-body {
+            flex: 1;
+            overflow-y: scroll;
+            .variant-row {
+                cursor: pointer;
+                border-bottom: 1px solid @border-color;
+                padding: 15px;
+
+                &.isDark {
+                    background: #fafbfc;
+                }
+                &.selected {
+                    background: @primary-color;
+                    color: #fff !important;
+                }
+
+                &:hover {
+                    background: @primary-color;
+                    color: #fff !important;
+                }
+            }
+        }
+        .ant-table-row {
+            cursor: pointer;
+
+            &.selected {
+                color: #ffffff;
+                background: @primary-color;
+
+                &:hover {
+                    .ant-table-cell {
+                        background: @primary-color;
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+
+    .product-general-info {
+        color: @dark;
+
+        .ant-card-body {
+            padding: 20px 26px 30px;
+        }
+
+        .general-info {
+            margin-bottom: 20px;
+        }
+
+        .tab-label {
+            display: inline-block;
+            padding-bottom: 8px;
+            border-bottom: 2px solid @dark;
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.19;
+        }
+
+        .ant-avatar.ant-avatar-square {
+            border-radius: 4px;
+        }
+
+        .ant-row {
+            line-height: 1.21;
+
+            .ant-col.ant-col-12:nth-child(odd) {
+                font-weight: 500;
+            }
+        }
+
+        .description {
+            &-content {
+                span {
+                    display: block;
+                    line-height: 1.57;
+                }
+            }
+        }
+    }
+
+    .card-table-stock {
+        .ant-card-body {
+            padding: 0;
+
+            .ant-typography {
+                padding: 20px 24px 0;
+            }
+        }
+
+        .table-stock {
+            border-top: 1px solid #f0f0f0;
+
+            .ant-table-cell {
+                padding-left: 24px;
+            }
+
+            .ant-table-thead > tr > .ant-table-cell {
+                padding: 0 24px;
+                height: 47px;
+                background-color: #ffffff;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .ant-space {
+        max-width: 100%;
+    }
+
+    .table-dark-even {
+        .ant-table-row:nth-child(even):not(.selected) {
+            .ant-table-cell {
+                background-color: #fafbfc;
+            }
+        }
+    }
+}

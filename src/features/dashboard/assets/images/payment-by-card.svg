@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="31.329" viewBox="0 0 37 31.329">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="_Clipping_Path_" d="M29.012 36.131V34.8a3.188 3.188 0 0 0-3.188-3.188H3.19A3.188 3.188 0 0 0 0 34.8v1.333z" class="cls-1" transform="translate(0 -31.61)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#ffd01f}.cls-3{fill:#fdb600}.cls-15,.cls-7{fill:none}.cls-7{stroke:#6dbdc2;stroke-miterlimit:10;stroke-width:2px}.cls-9{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group_2265" transform="translate(-1086 -438.671)">
+        <g id="Layer_2" transform="translate(1086 417.092)">
+            <g id="OBJECTS" transform="translate(0 21.579)">
+                <rect id="Rectangle_1583" width="29.012" height="18.412" fill="#ff9800" rx="4" transform="translate(3.657)"/>
+                <path id="Rectangle_1584" d="M0 0H8.12V1.629H0z" class="cls-1" transform="translate(22.405 2.123)"/>
+                <path id="Rectangle_1585" d="M0 0H15.924V1.629H0z" class="cls-3" transform="translate(6.481 2.123)"/>
+                <path id="Path_2511" d="M135.338 68.389a1.915 1.915 0 0 0-2.707 0 1.891 1.891 0 0 0-.371.523 1.915 1.915 0 1 0 0 1.668 1.854 1.854 0 0 0 .371.521 1.915 1.915 0 1 0 2.707-2.708z" class="cls-3" transform="translate(-104.778 -55.255)"/>
+                <text id="_0002_0003_0004_0005" fill="#454c53" font-family="Roboto-Regular, Roboto" font-size="1px" letter-spacing="0.249em" transform="translate(4.974 10.806)">
+                    <tspan x="0" y="0">0002 0003 0004 0005</tspan>
+                </text>
+                <text id="CARD" fill="#fdb600" font-family="Roboto-Light, Roboto" font-size="4px" font-weight="300" letter-spacing="0.09em" transform="translate(15.451 7.759)">
+                    <tspan x="0" y="0">CARD</tspan>
+                </text>
+                <rect id="Rectangle_1586" width="29.012" height="18.412" class="cls-1" rx="4" transform="translate(0 5.86)"/>
+                <path id="_Clipping_Path_2" d="M29.012 36.131V34.8a3.188 3.188 0 0 0-3.188-3.188H3.19A3.188 3.188 0 0 0 0 34.8v1.333z" class="cls-1" transform="translate(0 -25.75)"/>
+                <g id="Group_2259" clip-path="url(#clip-path)" transform="translate(0 5.86)">
+                    <path id="Line_170" d="M0 6.624L4.937 0" class="cls-7" transform="translate(1.728 -1.053)"/>
+                    <path id="Line_171" d="M0 6.624L4.938 0" class="cls-7" transform="translate(7.011 -1.053)"/>
+                    <path id="Line_172" d="M0 6.624L4.937 0" class="cls-7" transform="translate(12.296 -1.053)"/>
+                    <path id="Line_173" d="M0 6.624L4.938 0" class="cls-7" transform="translate(17.579 -1.053)"/>
+                    <path id="Line_174" d="M0 6.624L4.937 0" class="cls-7" transform="translate(22.864 -1.053)"/>
+                </g>
+                <path id="Rectangle_1587" fill="#454c53" d="M0 0H29.012V2.844H0z" transform="translate(0 8.844)"/>
+                <path id="Rectangle_1588" d="M0 0H18.273V3.261H0z" class="cls-9" transform="translate(1.405 13.427)"/>
+                <path id="Rectangle_1589" d="M0 0H6.134V3.261H0z" class="cls-9" transform="rotate(180 13.634 11.15)"/>
+                <path id="Rectangle_1590" fill="#e79f03" d="M0 0H10.198V1.468H0z" transform="rotate(180 9.839 11.15)"/>
+                <path id="Rectangle_1591" fill="#347a91" d="M0 0H6.549V2.141H0z" transform="translate(1.405 20.104)"/>
+                <path id="Path_2512" fill="#6dbdc2" d="M118.588 72.63a1.668 1.668 0 0 0-2.7.456 1.678 1.678 0 1 0 0 1.461 1.7 1.7 0 0 0 .323.456 1.678 1.678 0 0 0 2.375-2.373z" transform="translate(-91.81 -58.76)"/>
+                <text id="_0002_0003_0004" fill="#454c53" font-family="Roboto-Regular, Roboto" font-size="1px" letter-spacing="0.25em" transform="translate(1.405 18.225)">
+                    <tspan x="0" y="0">0002 0003 0004</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Group_2260" transform="translate(1108 451.12)">
+            <g id="Rounded_Rectangle_7_copy_10" fill="#307dd2" stroke="#fff" stroke-linejoin="round" transform="translate(1 4.88)">
+                <rect width="14" height="14" stroke="none" rx="4"/>
+                <rect width="13" height="13" x=".5" y=".5" class="cls-15" rx="3.5"/>
+            </g>
+            <g id="ic-actions-add" transform="translate(4 7.88)">
+                <path id="Rectangle_25" d="M0 0H7.091V7.091H0z" class="cls-15"/>
+                <g id="Layer">
+                    <path id="Path_64" fill="#fff" fill-rule="evenodd" d="M1 5a4 4 0 1 1 4 4 4 4 0 0 1-4-4zm4-3.273A3.273 3.273 0 1 0 8.273 5 3.273 3.273 0 0 0 5 1.727z" transform="translate(-1 -1)"/>
+                    <path id="Path_65" d="M11.364 10.362a.342.342 0 0 1-.364-.313V6.311a.368.368 0 0 1 .727 0v3.738a.342.342 0 0 1-.363.313z" class="cls-9" transform="translate(-7.364 -4.18)"/>
+                    <path id="Path_66" d="M6 11.364A.342.342 0 0 1 6.311 11h3.738a.368.368 0 0 1 0 .727H6.311A.342.342 0 0 1 6 11.364z" class="cls-9" transform="translate(-4.18 -7.364)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

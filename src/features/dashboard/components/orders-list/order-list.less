@@ -1,0 +1,82 @@
+.order-list {
+    background: #fff;
+    height: calc(100vh - 236px);
+    display: flex;
+    flex-direction: column;
+
+    .order-list-heading {
+        font-weight: 500;
+        padding: 15px;
+        background: #fff;
+        border-bottom: 1px solid @border-color;
+    }
+
+    .order-list-body {
+        flex: 1;
+        overflow-y: auto;
+    }
+
+    .order {
+        &-price,
+        &-status,
+        &-code {
+            width: 25%;
+        }
+
+        &-code {
+            font-weight: 500;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        &-status {
+            text-align: center;
+        }
+
+        &-price {
+            text-align: right;
+
+            .price {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .paid {
+        &-status {
+            width: 25%;
+            text-align: center;
+        }
+    }
+}
+
+.order-row {
+    cursor: pointer;
+    border-bottom: 1px solid @border-color;
+    padding: 15px;
+
+    &.isDark {
+        background: #fafbfc;
+    }
+
+    .order,
+    .paid {
+        &-status {
+            color: @error-color;
+
+            &.done {
+                color: @primary-color;
+            }
+        }
+    }
+
+    &:hover {
+        background: @primary-color;
+        color: #fff !important;
+
+        .order-status,
+        .paid-status {
+            color: #fff !important;
+        }
+    }
+}

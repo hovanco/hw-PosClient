@@ -1,0 +1,36 @@
+.search-order {
+    .search-order-input {
+        height: 38px;
+    }
+
+    .order-row {
+        cursor: pointer;
+        padding: 10px 15px;
+        border-bottom: 1px solid @border-color;
+
+        &:hover {
+            background: @border-color;
+        }
+
+        .order-code {
+            font-weight: 500;
+        }
+
+        .order-status {
+            text-align: center;
+        }
+
+        .order-price {
+            text-align: right;
+
+            .price {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .dropdown-orders {
+        max-height: 320px;
+        overflow: auto;
+    }
+}
